@@ -1,0 +1,14 @@
+general:
+  artifacts:
+    - build/libs/*
+
+dependencies:
+  override:
+    - echo "circleci pls" #pls
+
+test:
+  pre:
+    - chmod +x ./gradlew
+    - git submodule update --init
+  override:
+    - ./gradlew build
