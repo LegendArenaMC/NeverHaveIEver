@@ -15,7 +15,7 @@ public class NeverHaveIEver extends JavaPlugin {
 
     public void onEnable() {
         instance = GameManager.getInstance();
-        instance.registerListener(null);
+        //instance.registerListener(null);
     }
 
     public void onDisable() {
