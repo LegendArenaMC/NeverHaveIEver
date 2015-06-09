@@ -9,6 +9,9 @@ repositories {
 		url "https://hub.spigotmc.org/nexus/content/groups/public/"
 	}
 	maven {
+		url "http://mvn-thenamedev.rhcloud.com/content/repositories/libs/"
+	}
+	maven {
 		url "http://mvn-thenamedev.rhcloud.com/content/repositories/snapshot"
 	}
 }
