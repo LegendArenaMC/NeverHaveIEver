@@ -1,5 +1,6 @@
-main: net.thenamedev.legendarena.neverhaveiever.NeverHaveIEver
+main: legendarena.NeverHaveIEver
 name: NeverHaveIEver
 author: ThePixelDev
-website: http://reddit.com/r/LegendArena
+depend: [LegendAPI]
+website: http://thenamedev.net/legendarena/
 description: "§cNever Have I Ever minigame. §8Plugin source code: https://github.com/LegendArenaMC/NeverHaveIEver"

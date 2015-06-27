@@ -1,4 +1,5 @@
 apply plugin: 'java'
+apply plugin: 'kotlin'
 
 compileJava.options.encoding = 'UTF-8' //gradle, pls. just, pls. #gradlepls
 javadoc.options.encoding = 'UTF-8' //srsly gradle pls
@@ -18,6 +19,21 @@ repositories {
 
 dependencies {
 	compile group: 'org.bukkit', name: 'bukkit', version: '1.8-R0.1-SNAPSHOT'
-    compile group: 'net.thenamedev', name: 'legendarena', version: '1.0-SNAPSHOT'
+	compile group: 'net.thenamedev', name: 'legendapi', version: '1.0-SNAPSHOT'
 	testCompile 'junit:junit:4.8.2'
+	compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+}
+
+buildscript {
+	ext.kotlin_version = '0.12.613'
+	repositories {
+		mavenCentral()
+	}
+	dependencies {
+		classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+	}
+}
+
+sourceSets {
+	main.kotlin.srcDirs += 'src/main/java'
 }
